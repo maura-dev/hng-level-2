@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+  <link rel="stylesheet" type="text/css" href="./styles.css">
+  
+  <title>Maureen Anyanwu</title>
+  
+</head>
+<body>
+    <div>
+        <div class="heading">
+            <a href="https://hng.tech"><img id="hng" src="./hng.png" width="65px"></a>
+            <a href="https://zuri.team"><img id="zuri" src="./zuri.svg" width="80px"/></a>
+            <a href="https://ingressive.org"><img id="i4g" src="./i4g.png" width="200px"/></a>
+        </div>
+        <p class="cv-name" padding="0px 10px 0px 10px">Application to join the Zuri/HNG/i4G team</p>
+    </div>
+    <hr/><br/>
+	<div class="cv-body">
+		<div class="top"></div>
+		<div class="bottom">
+			<div class="cv-image"><!-- > --></div>
+			<h3 class="cv-name">MAUREEN ANYANWU</h3>
+			<p class="grey-text title">FRONTEND DEVELOPER</p>
+			<div class="content">
+				<div class="left">
+					<div>
+						<p class="grey-text">PROFILE</p>
+						<p>I am a Frontend Developer who is passionate about solving problems with my technical skills. I love collaborating and I am an excellent team player.</p>
+					</div>
+
+					<div>
+						<p class="grey-text">SKILLS</p>
+						<p class="bold-text">Coding Languages</p>
+						<p>JavaScript, HTML/CSS</p><br>
+						<p class="bold-text">Frameworks/Systems</p>
+						<p>Bootstrap, NextJS, ReactJS, Material UI, Chakra UI, Git(Version control) and Github</p><br>
+						<p class="bold-text">Non-Technical skills</p>
+						<p>Analytical skills, problem solving skills, team player, effective communication skills and debugging skills</p><br>
+					</div>
+
+					<div>
+						<p class="grey-text">CHARACTER REFERENCES</p>
+						<p class="bold-text">Shamsudeen Aderoju</p>
+						<p>Programme Coordinator,</p>
+						<p> TIIDELAB Fellowship</p>
+						<p>Phone: +234 817 709 8608</p><br>
+					</div>
+
+					<div>
+						<p class="grey-text">CONTACT ME</p>
+						<p>WhatsApp: +2349067212981</p>
+						<p>Email: maureenanyanwu519@gmail.com</p>
+						<p>Address: Ikeja, Lagos</p>
+						<p>LinkedIn: @maureen-anyanwu</p>
+					</div>
+				</div>
+
+				<div class="right">
+
+					<div>
+						<p class="grey-text">PROJECTS WORKED ON</p>
+						<div>
+							<p class="bold-text">i2talk Chat App</p>
+							<p>TIIDELAB Fellowship | Aug. 2020 to Jan 2021</p>
+							<ul>
+								<li>Conversion of UI to reusable components</li>
+								<li>Led Frontend team to convert project from VanillaJS to ReactJS</li>
+								<li>Modified codes to fix errors</li>
+								<li>Deployment and hosting of webpage</li>
+								<li>Consumption of APIs required for project</li>
+								<li>Drafted our user journey and SRSD</li>
+							</ul>
+						</div><br>
+
+						<div>
+							<p class="bold-text">Hacker News Replica</p>
+							<ul>
+								<li>Redesigned UI and converted to reusable components with ReactJS</li>
+								<li>Consumed APIs using axios</li>
+							</ul>
+						</div><br>
+
+                        <div>
+							<p class="bold-text">Fortunae</p>
+							<p>Fortunae Tech | Jun 2021 to Date</p>
+							<ul>
+								<li>Conversion of UI designs on figma to reusable components</li>
+								<li>Setting up context and components using Chakra UI</li>
+								<li>Consumption of APIs required for project</li>
+								
+							</ul>
+						</div><br>
+
+					</div>
+					<br>
+					<br>
+					<div>
+						<p class="grey-text">EDUCATIONAL TRAINING</p>
+
+						<div>
+							<p class="bold-text">University of Nigeria, Enugu Campus</p>
+							<p>Bachelor of Medical Radiography(in view)</p>
+							<ul>
+								<li>Enrolled since Sept. 2018 to present</li>
+							</ul>
+						</div><br>
+
+						<div>
+							<p class="bold-text">TIIDELAB Fellowship Cohort two</p>
+							<p>Certified Junior Frontend Developer</p>
+							<ul>
+								<li>Attended from Aug. 2020 to Jan. 2021</li>
+							</ul>
+						</div><br>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+
+    <button class="floating-button" onclick="printName()">Print my name</button>
+</body>
+<script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
+<script>
+    if(window.innerWidth<=350){
+        document.getElementById("hng").style.width="45px";
+        document.getElementById("zuri").style.width="60px";
+        document.getElementById("i4g").style.width="130px";
+    }else{
+        document.getElementById("hng").style.width="65px";
+        document.getElementById("zuri").style.width="65px";
+        document.getElementById("i4g").style.width="200px";
+    }
+
+    const printName=()=>{
+        swal("Maureen Anyanwu", "Good Job!", "success");
+    }
+</script>
+</html>

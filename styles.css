@@ -1,0 +1,175 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400&display=swap');
+
+*{
+	box-sizing: border-box;
+}
+
+html,body{
+	scroll-behavior: smooth;                            
+	margin: 0;
+	padding: 0;
+	font-size: 12px;
+	font-family: 'Roboto',sans-serif;
+}
+
+.cv-body{
+	width:60%;
+	height:auto;
+	margin:auto;
+	background-color: #ffffff;
+	box-shadow: 10px 7px 132px -18px rgba(0,0,0,0.26);
+	-webkit-box-shadow:10px 7px 132px -18px rgba(0,0,0,0.26);
+	-moz-box-shadow:10px 7px 132px -18px rgba(0,0,0,0.26);
+	padding-top: 10px;
+	padding-bottom:50px;
+	margin-bottom:50px;
+}
+
+.top{
+	background-color:#dee1f6;;
+	height:180px;
+	z-index: 1;
+	margin:10px;
+}
+
+.grey-text{
+	color:lightslategrey;
+	letter-spacing: 3px;
+}
+
+.bold-text{
+	font-weight: 700;
+}
+
+.cv-image{
+	width:180px;
+	height:180px;
+	border-radius: 50%;
+	z-index: 2;
+	margin: -130px auto 0px auto;
+	background-image: url(./dp.jpeg);
+	background-size: cover;
+}
+
+.cv-name{
+	text-align: center;
+	letter-spacing: 8px;
+	font-size: 30px;
+    line-height: 40px;
+}
+
+.title{
+	font-size: 20px;
+	text-align: center;
+	letter-spacing: 5px;
+	margin-bottom: 50px;
+}
+
+.content{
+	padding: 0px 100px ;
+	display: flex;
+	flex-direction: row;
+}
+
+.left{
+	border-right: 2px solid #dee1e6;
+}
+
+.left,
+.right{
+	padding:20px;
+	width:50%;
+	border-top: 2px solid #dee1e6;
+	margin-top:20px;
+}
+
+li,
+p{
+	line-height:20px;
+}
+
+.heading{
+  display: block;
+  margin:auto;
+ text-align: center;  
+}
+
+.floating-button{
+	position:fixed;
+    width:150px;
+	height:50px;
+	bottom:20px;
+	right:20px;
+	background-color:#dee1f6;
+	color:black;
+    font-weight: 700;
+	border-radius:5px;
+	text-align:center;
+	box-shadow: 2px 2px 3px #999;
+    border:1px solid #dee1f6;
+    outline-style: none;
+}
+
+.floating-button:hover{
+    cursor: pointer;
+}
+
+
+@media only screen and (max-width:1050px){
+
+	.cv-body{
+		width:80%;
+	}
+
+	}
+
+
+@media only screen and (max-width:800px){
+	.content{
+		padding:50px;
+	}
+
+	.cv-body{
+		width:90%;
+	}
+
+	}
+
+
+@media only screen and (max-width:570px){
+	.content{
+		padding:20px;
+	}
+
+	.cv-body{
+		width:100%;
+	}
+
+	}
+
+
+@media only screen and (max-width:450px){
+	.content{
+		flex-direction: column;
+		text-align: center;
+	}
+
+	.left,
+.right{
+	width:100%;
+	padding:20px;
+}
+
+.left{
+	border-right: none;
+}
+
+ul{
+	text-align: left;
+}
+
+.cv-name{
+    font-size: 20px;
+}
+
+	}
